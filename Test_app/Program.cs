@@ -43,7 +43,7 @@ namespace Test_app
         static double[] Gauss(double [,] matA, double[] vecB, int n)
         {
             double[] x = new double[n];
-            //Console.WriteLine("\n[Extended matrix]");
+            Console.WriteLine("\n[Extended matrix]");
             double[,] mas = new double[n, n+1];
 
             for (int i=0; i < mas.GetLength(0); i++)
@@ -58,14 +58,14 @@ namespace Test_app
             }
 
             //ВЫВОД РАСШИРЕННОЙ МАТРИЦЫ
-            //for (int i = 0; i < mas.GetLength(0); i++)
-            //{
-            //    for (int j = 0; j < mas.GetLength(1); j++)
-            //    {
-            //        Console.Write(Math.Round(mas[i, j], 5) + " ");
-            //    }
-            //    Console.WriteLine();
-            //}
+            for (int i = 0; i < mas.GetLength(0); i++)
+            {
+                for (int j = 0; j < mas.GetLength(1); j++)
+                {
+                    Console.Write(Math.Round(mas[i, j], 5) + " ");
+                }
+                Console.WriteLine();
+            }
 
             for (int i=0; i < mas.GetLength(0); i++)
             {
@@ -100,9 +100,6 @@ namespace Test_app
                 //    Console.WriteLine();
                 //}
             }
-
-            Console.WriteLine("\n[Changed matrix]");
-            PrintMatrix(mas);
 
             x[n-1] = mas[n-1, n];
             for (int i = n - 2; i >= 0; i--)
@@ -333,19 +330,28 @@ namespace Test_app
         {
             Console.WriteLine("Enter V: ");
             int v = int.Parse(Console.ReadLine());
-            int n = 6;
+            int n = 8;
             double[,] matA = new double[n,n];
             matA = SetMatrixA(matA, v, n);
             //matA = TridiagMatrixA(matA, v, n); //метод прогонки
             double[] vecB = SetVectorB(matA, v, n);
+            //Gauss(matA, vecB, n);
             SimpleIterMethod.AlphaAndBetaMatrices(matA, vecB, n);
-            TridiagAlg(matA, vecB, n);  //метод прогонки
-            Determinant(matA, n);
+            //TridiagAlg(matA, vecB, n);  //метод прогонки
+            //Determinant(matA, n);
+            //EulerMethod.Execute();
+            //Console.WriteLine();
+            //EulerMethodImproved.Execute();
+            //Console.WriteLine();
+            //CorrPredMethod.Execute();
+            //FinDiffMethod.Execute();
 
-            double[,] matA_ = Inverse(matA, n);
-            Console.WriteLine("\nОбратная матрица:");
-            PrintMatrix(matA_);
-            MultMat(matA, matA_, n);
+
+            //double[,] matA_ = Inverse(matA, n);
+            //Console.WriteLine("\nОбратная матрица:");
+            //PrintMatrix(matA_);
+            //Console.WriteLine("\nПроизведение матриц:");
+            //MultMat(matA, matA_, n);
             //Gauss(matA, vecB, n);
             Console.ReadKey();
         }

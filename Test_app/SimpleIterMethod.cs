@@ -44,7 +44,7 @@ namespace Test_app
             GetVectorX(alpha, beta, beta);
         }
 
-        public static double[] MultMatrixVec(double[,] matr, double[] vec)
+        public static double[] MultMatrixVec(double[,] matr, double[] vec) //умножение матрицы на вектор
         {
             double[] result = new double[vec.Length];
 
@@ -61,7 +61,7 @@ namespace Test_app
             return result;
         }
 
-        public static double[] VectorsSum(double[] vec1, double[] vec2)
+        public static double[] VectorsSum(double[] vec1, double[] vec2) //сложение векторов
         {
             double[] result = new double[vec1.Length];
 
@@ -73,7 +73,7 @@ namespace Test_app
             return result;
         }
 
-        public static double[] VectorsDiff(double[] vec1, double[] vec2)
+        public static double[] VectorsDiff(double[] vec1, double[] vec2) //разность векторов
         {
             double[] result = new double[vec1.Length];
 
@@ -85,7 +85,7 @@ namespace Test_app
             return result;
         }
 
-        public static double GetVectorNorm(double[] vec)
+        public static double GetVectorNorm(double[] vec) //получить норму вектора
         {
             double result = 0;
             for (int i = 0; i < vec.Length; i++)

@@ -42,6 +42,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CorrPredMethod.cs" />
+    <Compile Include="EulerMethodImproved.cs" />
+    <Compile Include="EulerMethod.cs" />
+    <Compile Include="FinDiffMethod.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SimpleIterMethod.cs" />

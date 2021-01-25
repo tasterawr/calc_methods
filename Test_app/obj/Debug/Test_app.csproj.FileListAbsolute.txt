@@ -12,10 +12,9 @@ C:\Users\Zver\source\repos\Test_app\Test_app\obj\Debug\Test_app.csprojAssemblyRe
 C:\Users\Zver\source\repos\Test_app\Test_app\obj\Debug\Test_app.csproj.CoreCompileInputs.cache
 C:\Users\Zver\source\repos\Test_app\Test_app\obj\Debug\Test_app.exe
 C:\Users\Zver\source\repos\Test_app\Test_app\obj\Debug\Test_app.pdb
-C:\Users\LOKTEVS\source\repos\Test_app\Test_app\bin\Debug\Test_app.exe.config
 C:\Users\LOKTEVS\source\repos\Test_app\Test_app\bin\Debug\Test_app.exe
-C:\Users\LOKTEVS\source\repos\Test_app\Test_app\bin\Debug\Test_app.pdb
-C:\Users\LOKTEVS\source\repos\Test_app\Test_app\obj\Debug\Test_app.csprojAssemblyReference.cache
+C:\Users\LOKTEVS\source\repos\Test_app\Test_app\bin\Debug\Test_app.exe.config
 C:\Users\LOKTEVS\source\repos\Test_app\Test_app\obj\Debug\Test_app.csproj.CoreCompileInputs.cache
 C:\Users\LOKTEVS\source\repos\Test_app\Test_app\obj\Debug\Test_app.exe
 C:\Users\LOKTEVS\source\repos\Test_app\Test_app\obj\Debug\Test_app.pdb
+C:\Users\LOKTEVS\source\repos\Test_app\Test_app\bin\Debug\Test_app.pdb
